@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+
+/**
+ * Encapsulation is wrapping up of data and member function in a single unit called class.
+ * 
+ * data hiding --> private
+ */
 class Account
 {
 private:
