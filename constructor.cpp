@@ -17,6 +17,10 @@ private:
     double salary;
 
 public:
+    // properties / attributes
+    string name;
+    string dept;
+    string subject;
 
     // non-parameterized
     Teacher()
@@ -25,38 +29,28 @@ public:
         dept = "Computer Science and Engineering";
     }
 
-
     // parameterized
-    Teacher(string n, string d, string s, double sal){
-        name = n;
-        dept= d;
-        subject = s;
-        salary = sal;
-
+    Teacher(string name, string dept, string subject, double salary)
+    {
+        this->name = name;
+        this->dept = dept;
+        this->subject = subject;
+        this->salary = salary;
     }
-
-
-    // properties / attributes
-    string name;
-    string dept;
-    string subject;
 
     // methods/ member function
     void getInfo()
     {
-        cout<<"Name: "<< name<<endl;
-        cout<<"Subject: "<< subject<<endl;
+        cout << "Name: " << name << endl;
+        cout << "Subject: " << subject << endl;
     }
-
-   
 };
 
 int main()
 {
-    Teacher t1("shimol","CSE","Cpp",24000);
-    Teacher t2;
+    Teacher t1("shimol", "CSE", "Cpp", 24000);
+    // Teacher t2;
     t1.getInfo();
-
 
     return 0;
 }
